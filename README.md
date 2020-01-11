@@ -10,6 +10,12 @@ After [installing Nodejs](https://nodejs.org/en/download/), you are ready to go.
 
 To run simply execute `node webserver.js`
 
-Once the webserver is running on your local machine, go to url [`http://localhost:8080/weather?ID=1`](http://localhost/weather?ID=1) to see the working example.
+Once the webserver is running on your local machine, go to url [`http://localhost:8080/weather?ID=1`](http://localhost:8080/weather?ID=1) to see the working example.
 
 ### Creating Docker Image from Dockerfile
+
+Because the source code is finished and the docker file is complete, you only need to build the image using the docker CLI `$ docker build -t chsclarke11/node-web-app .`
+
+Finally, run the image and expose it to port 80 `docker run -p 80:8080 -d chsclarke11/node-web-app`
+
+You can now access the webserver at [`http://localhost/weather?ID=1`](http://localhost/weather?ID=1)
