@@ -23,3 +23,5 @@ Finally, run the image and expose it to port 80
 `$ docker run -p 80:8080 -d chsclarke11/node-web-app`
 
 You can now access the webserver at [`http://localhost/weather?ID=1`](http://localhost/weather?ID=1)
+
+### Pulling Docker Image from Docker Hub
