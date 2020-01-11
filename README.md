@@ -14,10 +14,10 @@ To run simply execute `node webserver.js` after cloning the repository.
 Once the webserver is running on your local machine, go to url [`http://localhost:8080/weather?ID=1`](http://localhost:8080/weather?ID=1) to see the working example.
 
 After starting the program and hitting the endpoint, expect an output similar to this:
-
->> Initializing Webserver on port: 8080
->> Retrieiving data @ ID: 1
-
+`
+\>\> Initializing Webserver on port: 8080
+\>\> Retrieiving data @ ID: 1
+`
 ### Creating Docker Image from Dockerfile
 
 Because the source code is finished and the docker file is complete, you only need to build the image using the docker CLI.
