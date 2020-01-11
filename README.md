@@ -4,11 +4,12 @@ simple example of a Node.js endpoint mimicking an interview question I was asked
 ## Getting Started
 
 ### Running locally without Docker Image
+
 All packages used in this example are built in to Nodejs so there are no dependencies.
 
 After [installing Nodejs](https://nodejs.org/en/download/), you are ready to go.
 
-To run simply execute `node webserver.js`
+To run simply execute `node webserver.js` after cloning the repository.
 
 Once the webserver is running on your local machine, go to url [`http://localhost:8080/weather?ID=1`](http://localhost:8080/weather?ID=1) to see the working example.
 
@@ -25,3 +26,7 @@ Finally, run the image and expose it to port 80
 You can now access the webserver at [`http://localhost/weather?ID=1`](http://localhost/weather?ID=1)
 
 ### Pulling Docker Image from Docker Hub
+
+
+`$ docker pull chsclarke11/node-web-app`
+
