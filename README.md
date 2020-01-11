@@ -8,5 +8,5 @@ After [installing Nodejs](https://nodejs.org/en/download/), you are ready to go.
 
 To run simply execute `node webserver.js`
 
-Once the webserver is running on your local machine, go to url `http://localhost/weather?ID=1` to see the working example.
+Once the webserver is running on your local machine, go to url [`http://localhost/weather?ID=1`](http://localhost/weather?ID=1) to see the working example.
 
