@@ -2,7 +2,7 @@ var http = require('http');
 var url = require('url');
 var fs = require('fs');
 
-var WEBPORT = 80;
+var WEBPORT = 8080;
 
 console.log('>> Initializing Webserver on port: ' + WEBPORT);
 
