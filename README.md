@@ -28,6 +28,7 @@ You can now access the webserver at [`http://localhost/weather?ID=1`](http://loc
 ### Pulling Docker Image from Docker Hub
 
 First, pull my image from docker hub.
+
 `$ docker pull chsclarke11/node-web-app`
 
 Run the image and expose it to port 80 
