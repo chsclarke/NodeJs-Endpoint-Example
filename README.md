@@ -19,7 +19,8 @@ After starting the program and hitting the endpoint, expect an output similar to
 >> Retrieiving data @ ID: 1
 ```
 
-a successful hit to the endpoint will return `75`, a mock temp.
+A successful hit to the endpoint will return a mock temp as JSON object.
+An unsuccessful hit will return an error in JSON format as well.
 
 ### Creating Docker Image from Dockerfile
 
@@ -33,7 +34,8 @@ Finally, run the image and expose it to port 80.
 
 You can now access the webserver at [`http://localhost/weather?ID=1`](http://localhost/weather?ID=1)
 
-a successful hit to the endpoint will return `75`, a mock temp.
+A successful hit to the endpoint will return a mock temp as JSON object.
+An unsuccessful hit will return an error in JSON format as well.
 
 ### Pulling Docker Image from Docker Hub
 
@@ -47,5 +49,5 @@ Run the image and expose it to port 80.
 
 You can now access the webserver at [`http://localhost/weather?ID=1`](http://localhost/weather?ID=1)
 
-a successful hit to the endpoint will return `75`, a mock temp.
-
+A successful hit to the endpoint will return a mock temp as JSON object.
+An unsuccessful hit will return an error in JSON format as well.
