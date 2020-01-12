@@ -27,7 +27,7 @@ Because the source code is finished and the docker file is complete, you only ne
 
 `$ docker build -t chsclarke11/node-web-app .`
 
-Finally, run the image and expose it to port 80 
+Finally, run the image and expose it to port 80.
 
 `$ docker run -p 80:8080 -d chsclarke11/node-web-app`
 
@@ -41,7 +41,7 @@ First, pull my image from docker hub.
 
 `$ docker pull chsclarke11/node-web-app`
 
-Run the image and expose it to port 80 
+Run the image and expose it to port 80.
 
 `$ docker run -p 80:8080 -d chsclarke11/node-web-app`
 
