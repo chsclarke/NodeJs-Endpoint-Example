@@ -15,7 +15,7 @@ Once the webserver is running on your local machine, go to url [`http://localhos
 
 After starting the program and hitting the endpoint, expect an output similar to this:
 ```
->> Initializing Webserver on port: 8080
+>> Initializing server on port: 8080
 >> Retrieiving data @ ID: 1
 ```
 
