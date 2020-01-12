@@ -19,7 +19,6 @@ http.createServer(function (req, res) {
   // filename used to return html webpages
   var filename = "static/" + q.pathname;
 
-
   // "/weather" endpoint
   // example: http://localhost:3000/weather?ID=1
   if (q.pathname == "/weather") {
@@ -69,7 +68,7 @@ function getTemp(ID) {
 
   else if (ID == "3")
     return "{ \"tempId\" : " + ID + ", \"tempValue\" : 51 }"; 
-  
+
   else
     return "{ \"ERROR\" : \"tempId does not exist\"}"; 
 }
