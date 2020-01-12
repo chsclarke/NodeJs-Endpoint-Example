@@ -26,11 +26,11 @@ An unsuccessful hit will return an error in JSON format as well.
 
 Because the source code is finished and the docker file is complete, you only need to build the image using the docker CLI.
 
-`$ docker build -t chsclarke11/node-web-app .`
+`$ docker build -t <your_username>/node-web-app .`
 
 Finally, run the image and expose it to port 80.
 
-`$ docker run -p 80:8080 -d chsclarke11/node-web-app`
+`$ docker run -p 80:8080 -d <your_username>/node-web-app`
 
 You can now access the webserver at [`http://localhost/weather?ID=1`](http://localhost/weather?ID=1)
 
