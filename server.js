@@ -4,7 +4,7 @@ var fs = require('fs');
 
 var WEBPORT = 8080;
 
-console.log('>> Initializing Webserver on port: ' + WEBPORT);
+console.log('>> Initializing server on port: ' + WEBPORT);
 
 // function below creates server object and begins listening
 http.createServer(function (req, res) {
@@ -27,10 +27,11 @@ http.createServer(function (req, res) {
     }
 
     else
-      return res.end("you must provide an ID.");
+      return res.end("{ \"ERROR\" : \"you must enter a tempId\"}");
   }
 
   // if not '/weather', look for html page within /static path to return to web browser
+  // most useful for redirects to a 404 page.
   else{
     fs.readFile(filename, function(err, data) {
       if (err) {
@@ -50,7 +51,14 @@ http.createServer(function (req, res) {
 
 }).listen(WEBPORT);
 
-// getTemp function return mock data as a string object
+// getTemp function returns mock data as a JSON object
 function getTemp(ID) {
-  return "75";
+  if (ID == "1")
+    return "{ \"tempId\" : " + ID + ", \"tempValue\" : 75 }"; 
+  else if (ID == "2")
+    return "{ \"tempId\" : " + ID + ", \"tempValue\" : 60 }"; 
+  else if (ID == "3")
+    return "{ \"tempId\" : " + ID + ", \"tempValue\" : 51 }"; 
+  else
+    return "{ \"ERROR\" : \"tempId does not exist\"}"; 
 }
