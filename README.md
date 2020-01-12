@@ -34,7 +34,7 @@ Finally, run the image and expose it to port 80.
 You can now access the webserver at [`http://localhost/weather?ID=1`](http://localhost/weather?ID=1)
 
 A successful hit to the endpoint will return a mock temp as JSON object.
-An unsuccessful hit will return an error in JSON format as well.
+An unsuccessful hit will return an error in JSON format.
 
 ### Pulling Image from Docker Hub
 
@@ -49,7 +49,7 @@ Run the image and expose it to port 80.
 You can now access the webserver at [`http://localhost/weather?ID=1`](http://localhost/weather?ID=1)
 
 A successful hit to the endpoint will return a mock temp as JSON object.
-An unsuccessful hit will return an error in JSON format as well.
+An unsuccessful hit will return an error in JSON format.
 
 ## Usage
 
