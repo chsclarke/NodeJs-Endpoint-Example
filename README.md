@@ -18,6 +18,9 @@ After starting the program and hitting the endpoint, expect an output similar to
 >> Initializing Webserver on port: 8080
 >> Retrieiving data @ ID: 1
 ```
+
+a successful hit to the endpoint will return `75`, a mock temp.
+
 ### Creating Docker Image from Dockerfile
 
 Because the source code is finished and the docker file is complete, you only need to build the image using the docker CLI.
@@ -30,6 +33,8 @@ Finally, run the image and expose it to port 80
 
 You can now access the webserver at [`http://localhost/weather?ID=1`](http://localhost/weather?ID=1)
 
+a successful hit to the endpoint will return `75`, a mock temp.
+
 ### Pulling Docker Image from Docker Hub
 
 First, pull my image from docker hub.
@@ -41,4 +46,6 @@ Run the image and expose it to port 80
 `$ docker run -p 80:8080 -d chsclarke11/node-web-app`
 
 You can now access the webserver at [`http://localhost/weather?ID=1`](http://localhost/weather?ID=1)
+
+a successful hit to the endpoint will return `75`, a mock temp.
 
