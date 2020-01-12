@@ -1,5 +1,5 @@
 # NodeJs-Endpoint-Example
-simple example of a Node.js endpoint mimicking an interview question I was asked
+simple example of a containerized Node.js endpoint mimicking an interview question I was asked
 
 ## Getting Started
 
