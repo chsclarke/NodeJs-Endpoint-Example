@@ -21,7 +21,7 @@ After starting the program and hitting the endpoint, expect an output similar to
 A successful hit to the endpoint will return a mock temp as JSON object.
 An unsuccessful hit will return an error in JSON format as well.
 
-#### Creating Docker Image from Dockerfile
+### Creating Docker Image from Dockerfile
 
 Because the source code is finished and the docker file is complete, you only need to build the image using the docker CLI.
 
