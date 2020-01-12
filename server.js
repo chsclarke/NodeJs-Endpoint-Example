@@ -39,6 +39,7 @@ http.createServer(function (req, res) {
   // most useful for redirects to a 404 page.
   else{
     fs.readFile(filename, function(err, data) {
+
       if (err) {
         fs.readFile("static/404.html", function(err, data) {
           res.writeHead(200, {"Content-Type": "text/html"});
@@ -46,6 +47,7 @@ http.createServer(function (req, res) {
           return res.end();
         });
       }
+
       else {
         res.writeHead(200, {"Content-Type": "text/html"});
         res.write(data);
@@ -58,12 +60,16 @@ http.createServer(function (req, res) {
 
 // getTemp function returns mock data as a JSON object
 function getTemp(ID) {
+
   if (ID == "1")
     return "{ \"tempId\" : " + ID + ", \"tempValue\" : 75 }"; 
+
   else if (ID == "2")
     return "{ \"tempId\" : " + ID + ", \"tempValue\" : 60 }"; 
+
   else if (ID == "3")
     return "{ \"tempId\" : " + ID + ", \"tempValue\" : 51 }"; 
+  
   else
     return "{ \"ERROR\" : \"tempId does not exist\"}"; 
 }
